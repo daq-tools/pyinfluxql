@@ -2,8 +2,8 @@
 PyInfluxQL
 ##########
 
-.. image:: https://travis-ci.org/jjmalina/pyinfluxql.svg?branch=master
-    :target: https://travis-ci.org/jjmalina/pyinfluxql
+.. image:: https://github.com/daq-tools/pyinfluxql/workflows/Tests/badge.svg
+    :target: https://github.com/daq-tools/pyinfluxql/actions?workflow=Tests
 
 .. image:: https://img.shields.io/pypi/pyversions/pyinfluxql.svg
     :target: https://python.org

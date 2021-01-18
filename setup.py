@@ -44,7 +44,7 @@ setup(
     ],
     extras_require={
         "test": [
-            "pytest>=2.7.2,<3",
+            "pytest>=4.6.11,<7",
         ]
     },
 )
