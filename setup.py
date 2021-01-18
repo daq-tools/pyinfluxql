@@ -40,11 +40,11 @@ setup(
     platforms='any',
     install_requires=[
         "six>=1.9.0,<2",
-        "influxdb>=2.8.0,<3",
+        "influxdb>=2.8.0,<6",
     ],
     extras_require={
         "test": [
             "pytest>=4.6.11,<7",
-        ]
+        ],
     },
 )

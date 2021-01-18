@@ -21,7 +21,7 @@ influxdb_settings = {
 }
 
 
-@pytest.yield_fixture(scope='module')
+@pytest.fixture(scope='module')
 def influx_db():
     _influxdb = InfluxDBClient(
         influxdb_settings['INFLUXDB_HOST'],
