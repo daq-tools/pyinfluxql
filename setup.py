@@ -26,10 +26,25 @@ setup(
     classifiers=[
         "License :: OSI Approved :: MIT License",
         "Programming Language :: Python",
+        "Programming Language :: Python :: 2",
+        "Programming Language :: Python :: 2.7",
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.6",
+        "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
     ],
     packages=find_packages(),
     zip_safe=False,
     include_package_data=True,
     platforms='any',
-    tests_require=find_packages(include=['*-dev'])
+    install_requires=[
+        "six>=1.9.0,<2",
+        "influxdb>=2.8.0,<3",
+    ],
+    extras_require={
+        "test": [
+            "pytest>=2.7.2,<3",
+        ]
+    },
 )

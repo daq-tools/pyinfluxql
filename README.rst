@@ -1,16 +1,43 @@
+##########
 PyInfluxQL
-==========
+##########
+
 .. image:: https://travis-ci.org/jjmalina/pyinfluxql.svg?branch=master
     :target: https://travis-ci.org/jjmalina/pyinfluxql
 
-A query generator for the `InfluxDB SQL query syntax <https://influxdb.com/docs/v0.9/query_language/query_syntax.html/>`_. Like SQLAlchemy but for InfluxDB. Consider this an experimental WIP.
+.. image:: https://img.shields.io/pypi/pyversions/pyinfluxql.svg
+    :target: https://python.org
 
-Example
-~~~~~~~
+.. image:: https://img.shields.io/pypi/v/pyinfluxql.svg
+    :target: https://pypi.org/project/pyinfluxql/
+
+.. image:: https://img.shields.io/pypi/dm/pyinfluxql.svg
+    :target: https://pypi.org/project/pyinfluxql/
+
+.. image:: https://img.shields.io/pypi/status/pyinfluxql.svg
+    :target: https://pypi.org/project/pyinfluxql/
+
+.. image:: https://img.shields.io/pypi/l/pyinfluxql.svg
+    :target: https://pypi.org/project/pyinfluxql/
+
+
+*****
+About
+*****
+A query generator for the `InfluxDB SQL query syntax`_.
+Like SQLAlchemy but for InfluxDB. Consider this an experimental WIP.
+
+.. _InfluxDB SQL query syntax: https://influxdb.com/docs/v0.9/query_language/query_syntax.html/
+
+
+********
+Synopsis
+********
 .. code-block:: python
 
     from influxdb import InfluxDBClient
     from pyinfluxql import Engine, Query, Mean
+
     client = InfluxDBClient('localhost', 8086, 'root', 'root', 'example')
     engine = Engine(client)
     query = Query(Mean('value')).from_('cpu_load') \
@@ -18,15 +45,45 @@ Example
         .group_by(time=timedelta(hours=1))
     engine.execute(query)
 
-TODO
-~~~~
 
-- [X] integration tests against an InfluxDB server
-- [X] travis
-- [X] tox to test python versions
-- [] support for select expression aliases
-- [] support for create statements
-- [] support for show statements
-- [] support for drop statements
-- [] support for grant/revoke statements
-- [] support for alter statements
+*****
+Tests
+*****
+How to invoke the test suite.
+
+Using Tox
+=========
+Run InfluxDB within Docker::
+
+    docker run -it --rm --publish 8086:8086 influxdb:1.8.3
+
+Run ``tox``::
+
+    tox
+
+
+Using sandbox
+=============
+Alternatively, setup package in development mode::
+
+    python3 -mvenv .venv
+    source .venv/bin/activate
+    pip install --editable=.[test]
+
+Run ``pytest``::
+
+    py.test tests -vvv
+
+
+*******
+Backlog
+*******
+- [x] Integration tests against an InfluxDB server
+- [x] Add Travis CI
+- [x] Tox to test python versions
+- [o] Support for select expression aliases
+- [o] Support for create statements
+- [o] Support for show statements
+- [o] Support for drop statements
+- [o] Support for grant/revoke statements
+- [o] Support for alter statements

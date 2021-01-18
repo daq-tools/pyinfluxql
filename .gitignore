@@ -1,3 +1,6 @@
+.idea
+dist
+.cache
 .tox
 *.pyc
 .DS_Store
