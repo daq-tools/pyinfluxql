@@ -5,6 +5,8 @@ PyInfluxQL changelog
 
 in progress
 ===========
+- Bring setup.py, tox.ini, README.rst and requirements-*.txt up to speed
+- Migrate from Travis CI to GitHub Actions
 
 
 2021-01-18 0.0.1
