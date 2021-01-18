@@ -24,10 +24,10 @@ PyInfluxQL
 *****
 About
 *****
-A query generator for the `InfluxDB SQL query syntax`_.
+A query generator for the SQL dialect of the `Influx Query Language (InfluxQL)`_.
 Like SQLAlchemy but for InfluxDB. Consider this an experimental WIP.
 
-.. _InfluxDB SQL query syntax: https://influxdb.com/docs/v0.9/query_language/query_syntax.html/
+.. _Influx Query Language (InfluxQL): https://docs.influxdata.com/influxdb/v1.8/query_language/
 
 
 ********
