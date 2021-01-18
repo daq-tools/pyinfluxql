@@ -73,17 +73,3 @@ Alternatively, setup package in development mode::
 Run ``pytest``::
 
     py.test tests -vvv
-
-
-*******
-Backlog
-*******
-- [x] Integration tests against an InfluxDB server
-- [x] Add Travis CI
-- [x] Tox to test python versions
-- [o] Support for select expression aliases
-- [o] Support for create statements
-- [o] Support for show statements
-- [o] Support for drop statements
-- [o] Support for grant/revoke statements
-- [o] Support for alter statements
