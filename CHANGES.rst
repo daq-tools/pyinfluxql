@@ -7,6 +7,11 @@ in progress
 ===========
 
 
+2021-01-29 0.1.1
+================
+- Just update package metadata
+
+
 2021-01-18 0.1.0
 ================
 - Bring setup.py, tox.ini, README.rst and requirements-*.txt up to speed
