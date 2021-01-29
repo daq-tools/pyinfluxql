@@ -72,4 +72,16 @@ Alternatively, setup package in development mode::
 
 Run ``pytest``::
 
-    py.test tests -vvv
+    pytest tests -vvv
+
+
+*******
+Credits
+*******
+Thanks a stack to the original author `Jeremiah Malina`_ for his excellent
+work as well as `Michael Pérez`_ for adding integration tests, timezone support
+and for improving the documentation.
+
+
+.. _Jeremiah Malina: https://github.com/jjmalina
+.. _Michael Pérez: https://github.com/puhrez
