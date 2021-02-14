@@ -7,6 +7,11 @@ in progress
 ===========
 
 
+2021-02-14 0.1.2
+================
+- Allow installation on Python 3.5
+
+
 2021-01-29 0.1.1
 ================
 - Just update package metadata

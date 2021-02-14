@@ -10,7 +10,7 @@ def get_long_description():
 
 setup(
     name='pyinfluxql',
-    version='0.1.1',
+    version='0.1.2',
     url='https://github.com/daq-tools/pyinfluxql',
     author='Jeremiah Malina <me@jerem.io>, Michael Pérez <mpuhrez@gmail.com>',
     author_email='me@jerem.io',
