@@ -1,10 +1,15 @@
 # -*- coding: utf-8 -*-
+import sys
 from setuptools import setup, find_packages
 
 
 def get_long_description():
-    with open('README.rst', encoding='utf-8') as f:
-        readme = f.read()
+    if sys.version_info > (3,):
+        with open('README.rst', encoding='utf-8') as f:
+            readme = f.read()
+    else:
+        with open('README.rst') as f:
+            readme = f.read().decode("utf-8")
     return readme
 
 
