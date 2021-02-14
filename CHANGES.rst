@@ -7,6 +7,11 @@ in progress
 ===========
 
 
+2021-02-14 0.1.3
+================
+- Re-add compatibility with Python 2.7
+
+
 2021-02-14 0.1.2
 ================
 - Allow installation on Python 3.5
